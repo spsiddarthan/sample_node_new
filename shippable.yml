@@ -4,17 +4,17 @@ language: node_js
 node_js:
   - 0.10
   - 0.12
-# - 4.2.3
+ #- 4.2.3 
   #- iojs-v1
   #- iojs-v2
-  #- iojs-v3
+  - iojs-v3
+  - 5.0
+matrix:
+ exclude:
+  - node_js: 0.10
+  - node_js: 0.12
 
-  
 
-build:  
+build:
   ci:
     - node --version
-   
-    
-  
- 
