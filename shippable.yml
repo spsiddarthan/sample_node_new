@@ -42,8 +42,8 @@ integrations:
       recipients:
         - "#random" 
       on_start: always
-      on_success: never
-      on_failure: never
+     #on_success: never
+      on_failure: always
       
     - integrationName: email      
       type: email   
@@ -51,14 +51,14 @@ integrations:
         - sreyaj10@gmail.com
         - sreya@shippable.com
       on_start: always
-      on_success: never 
-      on_failure: never 
+    #  on_success: never 
+      on_failure: always
     
     - integrationName: irc   
       type: irc
       recipients:
         - "chat.freenode.net#test-irc"
       on_start: always
-      on_success: never
-      on_failure: never   
+    #  on_success: 
+      on_failure: always   
      
