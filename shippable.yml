@@ -26,7 +26,7 @@ build:
   ci:  
     - ps -eax
     - ls -al
-    - yjthjhf
+  
 
   post_ci:
     - docker push shippabledocker/hitchcock4_sample_node
