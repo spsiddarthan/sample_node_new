@@ -60,6 +60,6 @@ integrations:
         - "chat.freenode.net#test-irc"
       on_start: always
     #  on_success:  
-      on_failure: always   
+      on_failure: always        
        
     
