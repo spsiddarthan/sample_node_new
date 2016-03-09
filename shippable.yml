@@ -13,10 +13,10 @@ node_js:
  
 build:
   #pre_ci:
-   # - docker build --rm -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo11 .
+   # - docker build --rm -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1 .
 
   pre_ci_boot:
-    image_name: 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo11
+    image_name: 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1
     image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -28,7 +28,7 @@ build:
 
 
   post_ci:
-    - docker push 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo11
+    - docker push 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1
 
   smoke_test:
     - sudo ls /
