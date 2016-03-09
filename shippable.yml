@@ -10,14 +10,13 @@ node_js:
   #- iojs-v3
   #- 5.0
   
-
-
+ 
 build:
   pre_ci:
-    - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay .
+    - docker build --rm -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1 .
 
   pre_ci_boot:
-    image_name: quay.io/shippablequay/hitchcock2_sample_nodequay
+    image_name: 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1
     image_tag: latest
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -27,16 +26,23 @@ build:
     - ps -eax
     - ls -al
 
+
   post_ci:
-    - docker push quay.io/shippablequay/hitchcock2_sample_nodequay
+    - docker push 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1 
+
+  smoke_test:
+    - sudo ls /
+
+deploy:
+  pre_build:
+    - ls
+    - ls -al
+
 
 integrations:
   hub:
-    - integrationName: ship-quay
-      type: quay.io
-  
- 
-
+    - integrationName: "ship-ecr"
+      type: ecr
 
 
  
