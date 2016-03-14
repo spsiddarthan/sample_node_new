@@ -10,9 +10,9 @@ node_js:
   - iojs-v3
   - 5.0 
   
-#branches:
- #only:
-  #- master    
+branches:
+ except:
+  - master    
   
 build:
  # cache: true
