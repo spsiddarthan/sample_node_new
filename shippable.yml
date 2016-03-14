@@ -40,6 +40,9 @@ integrations:
       type: docker   
     #- integrationName: ship-quay
      # type: quay.io
+     branches:
+      only:
+       - master
     
 
    
