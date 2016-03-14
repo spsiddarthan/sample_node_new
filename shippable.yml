@@ -28,9 +28,9 @@ build:
 
 
   post_ci:
-    - docker build --rm -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:prod .
-    - docker tag -f 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:latest 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:prod
-    - docker push 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:prod
+    - docker build --rm -t=480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:tip .
+    - docker tag -f 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:latest 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:tip
+    - docker push 480971114143.dkr.ecr.us-east-1.amazonaws.com/vidya1-repo1:tip
 
   smoke_test:
     - sudo ls /
