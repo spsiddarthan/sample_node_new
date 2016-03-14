@@ -17,7 +17,7 @@ build:
    # - docker build -t=shippabledocker/shiphitchcock2_sample_node2 .
 
   pre_ci_boot:
-    image_name: shippabledocker/shiphitchcock4_sample_nodepr
+    image_name: shippabledocker/shiphitchcock2_sample_node2
     image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
