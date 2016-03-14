@@ -32,8 +32,8 @@ build:
     - ls -al 
 
   post_ci:
-    - docker build -t=shippabledocker/shiphitchcock4_sample_nodepr .
-    - docker push shippabledocker/shiphitchcock4_sample_nodepr
+    - docker build -t=shippabledocker/shiphitchcock4samplenod .
+    - docker push shippabledocker/shiphitchcock4samplenod
    # - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay .
     #- docker push quay.io/shippablequay/hitchcock2_sample_nodequay
 
