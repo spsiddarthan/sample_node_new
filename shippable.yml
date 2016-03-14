@@ -33,7 +33,7 @@ build:
 integrations:
   hub:
     - integrationName: ship-quay
-      type: quay.io
+      type: quay.io  
   
  
 
