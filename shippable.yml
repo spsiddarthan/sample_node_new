@@ -41,6 +41,7 @@ integrations:
       type: slack
       recipients:
         - "#random" 
+        - "#public-chnl"
       on_start: always
       on_success: always
       on_failure: always
@@ -58,6 +59,7 @@ integrations:
       type: irc
       recipients:
         - "chat.freenode.net#test-irc"
+        - "chat.freenode.net#test1-irc"
       on_start: always
       on_success: always
       on_failure: always          
