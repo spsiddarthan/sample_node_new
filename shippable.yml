@@ -24,7 +24,7 @@ build:
     
     
   ci:
-    - node --version
+    - node --version    
     - ps -eax
     - ls -al 
 
