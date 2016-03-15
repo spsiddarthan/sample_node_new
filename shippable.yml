@@ -22,7 +22,7 @@ build:
   ci:
     - node --version
     - echo $FOO
-    - echo $M1  
+    - echo $M1    
    
     
   
