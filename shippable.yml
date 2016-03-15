@@ -43,14 +43,14 @@ integrations:
         - "#random" 
         - "#public-chnl"
       on_start: never
-      on_success: always
+      on_success: change
       on_failure: never
       
     - integrationName: "ship-slack1"
       type: slack
       on_failure: never
-      on_start: always
-      on_success: never
+      on_start: never
+      on_success: change
       recipients:
         - "#general"
       
@@ -70,6 +70,6 @@ integrations:
         - "chat.freenode.net#test1-irc"
       on_start: always
       on_success: always
-      on_failure: always          
+      on_failure: always           
        
     
