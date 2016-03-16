@@ -21,8 +21,9 @@ env:
 build:
   ci:
     - node --version
-    - echo $FOO
-    - echo $M1    
-   
+    #- echo $FOO
+    - echo $GOO
+    #- echo $M1    
+    - echo $SOO
     
   
