@@ -9,7 +9,7 @@ node_js:
 
 env:
   global:
-    - APP_NAME=herokuapp13
+    - APP_NAME=herokunewtest
     - secure: eZxHTwjAjvCGgki5mPQnFER9eYABP/Yym5rzeRccrLLhEvl91xiDNHfRCZpwLtPc0If6pLues4jfvGbMEhHNGIGTJiBk7+6e6OjWzDr6VsCmVEs20D92TP71F5GYecT2pAsDnAH9ZeQ8aXDtFTHlNkDTleAMEfEojW7ijEGOYuQTOPACJ1o2DpH6OacFhoWZQS1/n/7oPqlenDoQo4FOpc9vC8aFK/xDiDbhdjUPdhUT/iI/OHYpH7ZmC96na/YE6Y1flMtEplDMJT/YMl6Jk/AfXI1uZQ7nB+G/OyAcyxFIMgiggxuiQKtcuAcBzorUNfDNCPtTVpElGUhmy19vRw==
 build:
 
