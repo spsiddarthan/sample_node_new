@@ -7,11 +7,11 @@ node_js:
   - 0.12   
    
 env:
-  global:
-    - APP_NAME=herokunew1
+     global:
+          - APP_NAME=herokunew1
 
 on_success :
-  - git push -f git@heroku.com:$APP_NAME.git master
+     - git push -f git@heroku.com:$APP_NAME.git master
    
 
 build:
