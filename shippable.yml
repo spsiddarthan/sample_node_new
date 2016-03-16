@@ -10,7 +10,7 @@ node_js:
 env:
   global:
     - APP_NAME=herokunewtest
-    - secure: eZxHTwjAjvCGgki5mPQnFER9eYABP/Yym5rzeRccrLLhEvl91xiDNHfRCZpwLtPc0If6pLues4jfvGbMEhHNGIGTJiBk7+6e6OjWzDr6VsCmVEs20D92TP71F5GYecT2pAsDnAH9ZeQ8aXDtFTHlNkDTleAMEfEojW7ijEGOYuQTOPACJ1o2DpH6OacFhoWZQS1/n/7oPqlenDoQo4FOpc9vC8aFK/xDiDbhdjUPdhUT/iI/OHYpH7ZmC96na/YE6Y1flMtEplDMJT/YMl6Jk/AfXI1uZQ7nB+G/OyAcyxFIMgiggxuiQKtcuAcBzorUNfDNCPtTVpElGUhmy19vRw==
+    - secure: YPjKh9g66hcV1QvBZNG14Ita9ART9VOaYWN/baPzpdVGkwvKfCGhhbSNjU0YLlF90nqeJmqG4naTUAcaukERq9TKYo2dcaDME4kESr92FaOisAA9pQtFMsi7QXF++tcwKB34h0PyPO6knfyJ4GGb1D/ypPq6oZEGEX9yxyUb34hjhy5iH9gURP+mhKLt/L4hKJ12HprlJRgbjUVIgJfO73cAy1TceUSvp6IAOH9ux8pf9oXlitXbDXgl11PNID7iTboDMn6X/pEuCenwBcIXKP/drijOy/6yivqntwezNnBs6mO5jRUlWGvHzGfCqAyTxUG/D/UzkkW+iRfYBc7KIA==
 build:
 
   ci:
