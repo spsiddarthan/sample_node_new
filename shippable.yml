@@ -11,7 +11,7 @@ node_js:
 
 env:
   global:
-    - APP_NAME=masternew
+    - APP_NAME=herokuapp12
 
 on_success :
   - git push -f git@heroku.com:$APP_NAME.git master 
