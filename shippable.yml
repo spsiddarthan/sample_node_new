@@ -6,70 +6,23 @@ language: node_js
 node_js:
   - 0.12   
    
-env:
-     global:
-          - APP_NAME=herokunew
 
-on_success :
-     - git push -f git@heroku.com:$APP_NAME.git master
-   
+env:
+  global:
+    - APP_NAME=herokuapp13
+    - secure: 5gEF+UBtMLHRGL8hfIUPIWL5yJsZ4gRO/31t3E10wL7Kq8OBdV4jGM9lynhUYoGSP/qJ4HfgDe02Z1y6C7IeaVhrV4fcaYJvqvc/QrD6M8vMTrEoOdcsUOD5UDXuVUVaGfj++aSQYvBJebVbqW7lUQTjzeoT+2oI0dvrmZTxNLPKqXUZJqXHbJA2UROJBh01eyvKSs6t2xoX6DuYNG2iHej4kyWlqajUBQYA2cPNvVqLIr9m/peENBFNXeav1NQaVU2Sxo4uUGDRzmCj2rPVaz22lfvmaJyc3twA+4e8bc3AvUopL20hm7ch9DkF/GceA1SJRR+rkucUb3Py1vXnxA==
+  matrix:
+    - M1=ONE
 
 build:
-  pre_ci:
-    - docker build -t=shippabledocker/hitchcock4_sample_node .  
 
-  pre_ci_boot:
-    image_name: shippabledocker/hitchcock4_sample_node
-    image_tag: latest
-    pull: false
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
-
-  ci:  
+  ci:
+    - which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
     - ps -eax
     - ls -al
-
-  post_ci:
-    - docker push shippabledocker/hitchcock4_sample_node
-
-integrations:
-  hub:
-    - integrationName: ship-docker
-      type: docker
-      
-  notifications:
-    - integrationName: ship_slack
-      type: slack
-      recipients:
-        - "#random" 
-        - "#public-chnl"
-      on_start: always
-      on_success: always
-      on_failure: always
-      
-    - integrationName: "ship-slack1"
-      type: slack
-      on_failure: always
-      on_start: always
-      on_success: always
-      recipients:
-        - "#general"
-      
-    - integrationName: email      
-      type: email   
-      recipients: 
-          - sreyaj10@gmail.com
-          - sreya@shippable.com
-      on_start: always
-      on_success: always 
-      on_failure: always
-    
-    - integrationName: irc   
-      type: irc
-      recipients:
-        - "chat.freenode.net#test-irc"
-        - "chat.freenode.net#test1-irc"
-      on_start: always
-      on_success: always      
-      on_failure: always                             
-                   
+   # - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
+    - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f /tmp/ssh/00_sub > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
+    - git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
+    - git push -f heroku $BRANCH:master
+  
     
