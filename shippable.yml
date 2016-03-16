@@ -10,10 +10,7 @@ node_js:
 env:
   global:
     - APP_NAME=herokuapp13
-    - secure: 5gEF+UBtMLHRGL8hfIUPIWL5yJsZ4gRO/31t3E10wL7Kq8OBdV4jGM9lynhUYoGSP/qJ4HfgDe02Z1y6C7IeaVhrV4fcaYJvqvc/QrD6M8vMTrEoOdcsUOD5UDXuVUVaGfj++aSQYvBJebVbqW7lUQTjzeoT+2oI0dvrmZTxNLPKqXUZJqXHbJA2UROJBh01eyvKSs6t2xoX6DuYNG2iHej4kyWlqajUBQYA2cPNvVqLIr9m/peENBFNXeav1NQaVU2Sxo4uUGDRzmCj2rPVaz22lfvmaJyc3twA+4e8bc3AvUopL20hm7ch9DkF/GceA1SJRR+rkucUb3Py1vXnxA==
-  matrix:
-    - M1=ONE
-
+    - secure: eZxHTwjAjvCGgki5mPQnFER9eYABP/Yym5rzeRccrLLhEvl91xiDNHfRCZpwLtPc0If6pLues4jfvGbMEhHNGIGTJiBk7+6e6OjWzDr6VsCmVEs20D92TP71F5GYecT2pAsDnAH9ZeQ8aXDtFTHlNkDTleAMEfEojW7ijEGOYuQTOPACJ1o2DpH6OacFhoWZQS1/n/7oPqlenDoQo4FOpc9vC8aFK/xDiDbhdjUPdhUT/iI/OHYpH7ZmC96na/YE6Y1flMtEplDMJT/YMl6Jk/AfXI1uZQ7nB+G/OyAcyxFIMgiggxuiQKtcuAcBzorUNfDNCPtTVpElGUhmy19vRw==
 build:
 
   ci:
@@ -23,5 +20,5 @@ build:
    # - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
     - test -f ~/.ssh/id_rsa.heroku || ssh-keygen -y -f /tmp/ssh/00_sub > ~/.ssh/id_rsa.heroku && heroku keys:add ~/.ssh/id_rsa.heroku
     - git remote -v | grep ^heroku || heroku git:remote --ssh-git --app $APP_NAME
-    #- git push -f heroku $BRANCH:master 
+    - git push -f heroku $BRANCH:master 
     
