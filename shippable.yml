@@ -6,12 +6,13 @@ language: node_js
 node_js:
   - 0.12   
    
-env:   
-  global:   
-    - FOO=FUBU  
+env:
+  global:
+    - APP_NAME=herokunew1
 
-  matrix:
-    - M1=ONE
+on_success :
+  - git push -f git@heroku.com:$APP_NAME.git master
+   
 
 build:
   pre_ci:
