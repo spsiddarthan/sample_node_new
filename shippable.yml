@@ -40,7 +40,7 @@ integrations:
       type: slack
       recipients:
         - "#random" 
-        - "#public-chnl"
+        - "#public-chnl" 
       on_start: always
       on_success: always
       on_failure: always
