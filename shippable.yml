@@ -14,7 +14,7 @@ timeout: 5
 build:  
   ci:
     - node --version
-    - sleep 7000
+    - sleep 7000  
    
     
   
