@@ -9,7 +9,7 @@ node_js:
   #- iojs-v2
   #- iojs-v3
 
-timeout: 15
+timeout: 30
 
 build:  
   ci:
