@@ -9,12 +9,12 @@ node_js:
   #- iojs-v2
   #- iojs-v3
 
-timeout: 30
+#timeout: 30
 
 build:  
   ci:
     - node --version
-    - sleep 7000  
+    #- sleep 7000  
    
     
   
