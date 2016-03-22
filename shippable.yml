@@ -15,7 +15,7 @@ matrix:
     - node_js: iojs-v2 
   exclude:
     - node_js: 5.0
-
+    - node_js: 0.10
 build:
   ci:
     - node --version  
