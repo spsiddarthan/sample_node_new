@@ -17,7 +17,7 @@ matrix:
    # - node_js: 5.0
     #- node_js: 0.10
 branches:
-  except:
+  only:
     - matrix    
 build:
   ci:
