@@ -18,7 +18,8 @@ matrix:
     #- node_js: 0.10
 branches:
   except:
-    - master        
+    - matrix
+  
 build:
   ci:
     - node --version      
