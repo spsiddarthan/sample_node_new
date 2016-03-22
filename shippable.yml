@@ -21,5 +21,5 @@ branches:
     - master
 build:
   ci:
-    - node --version  
+    - node --version    
 
