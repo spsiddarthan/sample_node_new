@@ -1,9 +1,0 @@
-# .coveragerc to control coverage
-
-[run]
-branch = True
-
-source = .
-
-[html]
-directory = htmlcov
