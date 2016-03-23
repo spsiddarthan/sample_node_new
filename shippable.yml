@@ -26,10 +26,7 @@ build:
   ci:  
     - ps -eax
     - ls -al
-    - mkdir -p shippable/testresults
-    - mkdir -p shippable/codecoverage
-    - coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
-    - coverage xml -o shippable/codecoverage/coverage.xml
+ 
   post_ci:
     - docker push shippabledocker/hitchcock4_sample_node
 
