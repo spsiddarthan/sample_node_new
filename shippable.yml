@@ -4,7 +4,8 @@ language: node_js
      
 # Version number
 node_js:
-  - 0.12   
+  - 0.12
+  - 0.10
    
 env:   
   global:   
@@ -26,7 +27,7 @@ build:
   ci:  
     - ps -eax
     - ls -al
-    - thesssas
+    - if [ "$SHIPPABLE_node_js_VERSION" == "0.10" ]; then foobar; fi
  
   post_ci:
     - docker push shippabledocker/hitchcock4_sample_node
