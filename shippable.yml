@@ -31,7 +31,7 @@ build:
   ci:  
     - ps -eax
     - ls -al
-    - if [ "$SHIPPABLE_node_js_VERSION" == "0.10" ]; then foobar; fi
+    - if [ "$SHIPPABLE_NODE_VERSION" == "0.10" ]; then foobar; fi
  
   post_ci:
     - docker push shippabledocker/hitchcock4_sample_node
