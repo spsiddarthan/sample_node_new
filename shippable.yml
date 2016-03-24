@@ -6,13 +6,22 @@ language: node_js
 node_js:
   - 0.12
   - 0.10
-   
+  - 4.2.3
+ # - iojs-v1
+  - iojs-v2
+  - iojs-v3
 env:   
   global:   
     - FOO=FUBU  
 
   matrix:
     - M1=ONE
+matrix:
+  include:
+    - node_js: iojs-v1
+  exclude:
+    - node_js: iojs-v2
+ 
 
 build:
   pre_ci:
