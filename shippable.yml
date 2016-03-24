@@ -31,8 +31,8 @@ build:
   ci:  
     - ps -eax
     - ls -al
-    - if [ "$SHIPPABLE_NODE_VERSION" == "iojs-v2" ]; then foobar; fi
-    - if [ "$SHIPPABLE_NODE_VERSION" == "iojs-v3" ]; then foobar; fi
+    #- if [ "$SHIPPABLE_NODE_VERSION" == "iojs-v2" ]; then foobar; fi
+    #- if [ "$SHIPPABLE_NODE_VERSION" == "iojs-v3" ]; then foobar; fi
   post_ci:
     - docker push shippabledocker/hitchcock4_sample_node
 
