@@ -11,7 +11,7 @@ node_js:
   - iojs-v2
   - iojs-v3
 branches:
-  exclude:
+  except:
     - notifi*
 env:   
   global:   
