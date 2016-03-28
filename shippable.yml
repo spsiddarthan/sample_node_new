@@ -42,8 +42,11 @@ integrations:
     - integrationName: ship-docker
       type: docker   
     #-integrationName: ship-quay
-     #type: quay.io        
-           
+     #type: quay.io  
+      branches:
+       only:
+        - mult/*
+        - master  
     
    
    
