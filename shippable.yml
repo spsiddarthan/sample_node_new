@@ -12,6 +12,7 @@ node_js:
   
 branches:
  only:
+  - multi/*
   - master    
   
 build:
