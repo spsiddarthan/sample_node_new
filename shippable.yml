@@ -32,7 +32,7 @@ build:
   smoke_test:
     - sudo ls /
 
-
+  
 integrations:
   hub:
     - integrationName: ship-gcr
