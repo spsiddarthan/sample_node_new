@@ -12,7 +12,7 @@ node_js:
   - iojs-v3
 branches:
   except:
-    - notifi*
+    - master
 env:   
   global:   
     - FOO=FUBU  
