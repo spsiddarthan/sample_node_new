@@ -10,9 +10,9 @@ node_js:
   - iojs-v3
   - 5.0 
   
-#branches:
- #only:
-  #- master    
+branches:
+ only:
+  - master    
   
 build:
  # cache: true
@@ -43,11 +43,7 @@ integrations:
       type: docker   
     #-integrationName: ship-quay
      #type: quay.io  
-      branches:
-       only:
-       # - mult/*
-        - master  
-    
+
    
    
 
