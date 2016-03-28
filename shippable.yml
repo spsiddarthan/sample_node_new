@@ -10,6 +10,9 @@ node_js:
  # - iojs-v1
   - iojs-v2
   - iojs-v3
+branches:
+  exclude:
+    - master
 env:   
   global:   
     - FOO=FUBU  
@@ -77,7 +80,5 @@ integrations:
       on_success: always      
       on_failure: always      
 
-      branches:
-          only:
-               - noti/*
+
     
