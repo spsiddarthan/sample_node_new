@@ -20,10 +20,10 @@ matrix:
     - node_js: 0.12
 branches:
   only:
-    - matrix         
+    - matrix*        
 build:
   ci:
     - node --version 
-    - if [ "$SHIPPABLE_NODE_JS_VERSION" == "0.12" ]; then foobar; fi
+    - if [ "$SHIPPABLE_NODE_JS_VERSION" == "0.12" ]; then foobar; fi    
 
   
