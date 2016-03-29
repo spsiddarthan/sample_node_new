@@ -26,7 +26,7 @@ build:
 
   ci: 
     - ps -eax
-    - shippable_cache_container
+    #- shippable_cache_container
     - ls -al
     
   cache: true
