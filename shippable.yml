@@ -20,7 +20,7 @@ branches:
   except:
     - matrix-except-pr 
   
-build:
+build: 
   ci:
     - node --version      
 
