@@ -11,12 +11,12 @@ node_js:
   - iojs-v2
   - iojs-v3
    
-env:   
-  global:   
-    - FOO=FUBU  
+#env:   
+  #global:   
+   # - FOO=FUBU  
 
-  matrix:
-    - M1=ONE
+ # matrix:
+  #  - M1=ONE
 matrix:
   include:
     node_js: 0.10
