@@ -13,11 +13,12 @@ matrix:
   include:
     - node_js: iojs-v1
     - node_js: iojs-v2 
+      env: ship@=test
   exclude:
     - node_js: 5.0
     - node_js: 0.10
   allow_failures:
-    - node_js: 0.12
+    - node_js: iojs-v2
 branches:
   only:
     - matrix*        
