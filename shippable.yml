@@ -26,4 +26,4 @@ build:
     - node --version 
     - if [ "$SHIPPABLE_NODE_JS_VERSION" == "0.12" ]; then foobar; fi    
 
-  
+    
