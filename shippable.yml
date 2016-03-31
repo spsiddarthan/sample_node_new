@@ -79,7 +79,7 @@ integrations:
      
     - integrationName: ship-hipchat
       type: hipchat
-     recipients:
+      recipients:
         - '#testing'
      # - '#Pillar%20of%20Autumn'
         - '@shiphitchcock4'
