@@ -39,7 +39,7 @@ deploy:
     - ls -al
 
 
-integrations:
+integrations:    
   hub:
     - integrationName: "ship-ecr"
       type: ecr
