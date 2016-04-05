@@ -48,6 +48,6 @@ integrations:
       branches:
         only:
           ecr-pre
-         
+            
  
     
