@@ -38,8 +38,8 @@ integrations:
   hub:
     - integrationName: ship-docker
       type: docker 
-      branches:
-        except:
-          - post
+     # branches:
+      #  except:
+       #   - post
    
     
