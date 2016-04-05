@@ -34,9 +34,9 @@ integrations:
   hub:
     - integrationName: ship-quay
       type: quay.io   
-      branches:
-        except:
-          - quay-postci
+     # branches:
+      #  except:
+       #   - quay-postci
  
 
 
