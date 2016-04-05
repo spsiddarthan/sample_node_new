@@ -45,9 +45,9 @@ integrations:
   hub:
     - integrationName: "ship-ecr"
       type: ecr   
-      #branches:
-        #only:
-          #ecr-pre
+      branches:
+        only:
+          ecr-pre
             
        
     
