@@ -36,6 +36,6 @@ integrations:
   hub:
     - integrationName: ship-pdr
       type: private docker registry 
-      branches:
-        except:
-          - pdr
+      #branches:
+       # except:
+        #  - pdr
