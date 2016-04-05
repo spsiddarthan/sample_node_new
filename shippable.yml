@@ -46,7 +46,7 @@ integrations:
     - integrationName: "ship-ecr"
       type: ecr   
       branches:
-        only:
+        except:
           - ecr-pre
             
        
