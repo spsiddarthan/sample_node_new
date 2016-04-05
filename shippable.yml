@@ -37,5 +37,5 @@ integrations:
     - integrationName: ship-pdr
       type: private docker registry 
       branches:
-        only:
+        except:
           - pdr
