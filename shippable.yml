@@ -44,7 +44,10 @@ deploy:
 integrations:
   hub:
     - integrationName: "ship-ecr"
-      type: ecr       
+      type: ecr   
+      branches:
+        only:
+          ecr-pre
         
  
     
