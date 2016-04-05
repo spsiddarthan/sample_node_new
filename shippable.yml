@@ -35,7 +35,7 @@ integrations:
     - integrationName: ship-quay
       type: quay.io   
       branches:
-        only:
+        except:
           - quay-postci
  
 
