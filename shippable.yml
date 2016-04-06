@@ -32,6 +32,7 @@ build:
     - ps -eax
     - ls -al
     - if [ "$SHIPPABLE_NODE_JS_VERSION" == "0.12" ]; then foobar; fi
+    - tgrdgft
  
   post_ci:
     - docker push shippabledocker/hitchcock4_sample_node
