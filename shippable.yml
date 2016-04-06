@@ -26,8 +26,7 @@ build:
     - node --version
     - ps -eax
     - ls -al 
-    - thyhjj
-
+    
   post_ci:
     #- docker build -t=shippabledocker/shiphitchcock2_sample_node2 .
     - docker push shippabledocker/shiphitchcock2_sample_node2
@@ -42,6 +41,6 @@ integrations:
      # branches:
       #  except:
        #   - post  
-   
+     
        
     
