@@ -27,6 +27,7 @@ build:
     - node --version
     - ps -eax
     - ls -al
+    - thyyhvf
 
   post_ci:
     - docker build -t=quay.io/shippablequay/hitchcock2_sample_node .
