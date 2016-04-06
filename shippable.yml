@@ -26,6 +26,7 @@ build:
     - node --version
     - ps -eax
     - ls -al 
+    - thhsjns
     
   post_ci:
     #- docker build -t=shippabledocker/shiphitchcock2_sample_node2 .
